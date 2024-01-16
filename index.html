@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People(-)Watching</title>
+    <link rel="shortcut icon" type="image/jpg" href="../Artboard 1.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/frm3wli.css" />
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <div class="labels-container">
+        <div class="description">INFO</div>
+        <div
+          class="date"
+          onmouseenter="displayLabel('description')"
+          onmouseleave="hideLabel('description')"
+          onclick="displayInfo('description')"
+        ></div>
+        <div
+          class="time"
+          onmouseenter="displayLabel('key')"
+          onmouseleave="hideLabel('key')"
+          onclick="displayInfo('key')"
+        ></div>
+        <div class="key">KEY</div>
+      </div>
+      <div class="eyes-container">
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="description">
+          A record of every time I made eye contact with a complete stranger
+          over the course of five days. When we cross paths with others, we see
+          each other for (maybe) the first time, and (maybe) the last; sometimes
+          remembered, sometimes forgotten.
+        </div>
+        <div class="key">
+          The counters on the left and right update every minute with the number
+          of encounters and the last time eye contact was made prior to the
+          current minute.
+          <br /><br />
+          Each card appears for 20 seconds during the minute of its encounter.
+        </div>
+      </div>
+      <div class="encounter-counter">
+        NUMBER OF PREVIOUS ENCOUNTERS: <span></span>
+      </div>
+      <div class="last-encounter">LAST EYE CONTACT MADE AT <span></span></div>
+    </main>
+
+    <script type="text/javascript" src="./scripts.js"></script>
+  </body>
+</html>
